@@ -1,22 +1,10 @@
-# Sales Analytics Dashboard using Tableau
+# Sales Analytics Dashboard 
 
-This project is an interactive Sales Analytics Dashboard developed using Tableau.
-The dashboard provides insights into business performance by analyzing order trends, regional distribution, customer segments, and shipping modes.
-The dashboard helps in understanding business patterns through data visualization and interactive reporting techniques.
+The Sales Analytics Dashboard is a data visualization project designed to analyze sales performance, customer segments, regional orders, shipping modes, and monthly sales trends.
+This project uses Python to generate large sales datasets, Excel as the data source, and Tableau for creating interactive dashboards and visual insights.
 
-## Features
-### • Orders by Category Analysis
-### • Region-wise Orders Visualization
-### • Monthly Orders Trend Analysis
-### • Segment-wise Customer Analysis
-### • Ship Mode Analysis
-### • Interactive Filters and Dashboard Reporting
-
-## Tools Used
-### • Tableau
-### • CSV Dataset
-### • Data Visualization Techniques
-
-## Conclusion
-The dashboard helps analyze business performance and customer ordering trends through interactive visualizations and reports. 
-This project demonstrates practical knowledge of Tableau and data analytics concepts.
+## Tools & Technologies Used
+### Python
+### Pandas
+### Microsoft Excel
+### Tableau
