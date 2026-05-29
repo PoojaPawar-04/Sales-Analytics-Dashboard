@@ -1,0 +1,49 @@
+import pandas as pd
+import random
+from datetime import datetime, timedelta
+
+# Number of records
+num_records = 10000
+
+# Sample Data
+categories = ["Furniture", "Office Supplies", "Technology"]
+regions = ["Central", "East", "South", "West"]
+segments = ["Consumer", "Corporate", "Home Office"]
+ship_modes = ["First Class", "Second Class", "Same Day", "Standard Class"]
+
+data = []
+
+# Random date generator
+start_date = datetime(2015, 1, 1)
+end_date = datetime(2019, 12, 31)
+
+date_range = (end_date - start_date).days
+
+for i in range(1, num_records + 1):
+
+    random_date = start_date + timedelta(days=random.randint(0, date_range))
+
+    order = {
+        "Order ID": i,
+        "Category": random.choice(categories),
+        "Region": random.choice(regions),
+        "Segment": random.choice(segments),
+        "Ship Mode": random.choice(ship_modes),
+        "Sales": random.randint(100, 5000),
+        "Profit": random.randint(50, 1000),
+        "Quantity": random.randint(1, 10),
+        "Order Date": random_date
+    }
+
+    data.append(order)
+
+# Create DataFrame
+df = pd.DataFrame(data)
+
+# Save Excel file
+df.to_excel(
+    r"C:\Users\Dell\OneDrive\Desktop\Sales_Analytics_Data.xlsx",
+    index=False
+)
+
+print("Sales Analytics Excel file created successfully!")
